@@ -1,0 +1,11 @@
+{
+    "name": "softfocus/app",
+    "description": "mvc",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Empresa\\App\\": "src/"
+        }
+    },
+    "require": {}
+}

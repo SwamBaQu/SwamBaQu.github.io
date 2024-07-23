@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Encode+Sans+SC:wght@100..900&display=swap"
+    rel="stylesheet">
+  <title>Dopa Login</title>
+  <link rel="stylesheet" href="public/css/login.css">
+  <script src="public/js/showpass.js" async defer></script>
+
+</head>
+
+<body>
+  <div class="registrocontenedor">
+    <div class="registro">
+      <h1>¿TODAVÍA NO TE HICISTE <br> SOCIO?</h1>
+      <a href="register.html" class="botonregistro">¡Volvete parte del equipo!</a>
+      <p> Formá parte de nuestros eventos </p>
+      <p> Accedé a clases personalizadas </p>
+      <p> Cuidá tu alimentación al 100% </p>
+      <p> Reservá tus clases personalizadas </p>
+      <p> Reservá tu cancha de Fútbol, Basquet y Tenis </p>
+      <p> Accedé a descuentos y promociones exclusivas </p>
+    </div>
+    <div class="info">
+      <nav>
+        <ul>
+          <li><a href="#" title="Informate sobre nuestros Términos de Uso">Términos de Uso</a></li>
+          <li><a href="#" title="Informate sobre nuestra Política de Privacidad">Política de Privacidad</a></li>
+          <li><a href="#" title="Consigue ayuda en nuestro Centro de Ayuda">Centro de Ayuda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="flechacontenedor">
+    <i class="fa-solid fa-caret-left iconoflecha"></i>
+  </div>
+  <div class="formulariocontenedor">
+    <div class="Formulario">
+      <img src="./img/logos/DOPAv2midU.png" alt="LogoDopa" class="logo">
+      <form action="procesar_login.php" method="post">
+        <div class="campo">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+          <span class="input-linea"></span>
+        </div>
+        <div class="campo">
+          <label for="password">Contraseña</label>
+          <a href="#" class="olvidar">¿Olvidaste tu contraseña?</a>
+          <input type="password" id="password" name="password">
+          <i class="fa-solid fa-eye-slash iconoojolinea" id="iconoojo"></i>
+          <span class="input-linea"></span>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="recordarme" class="recordarme" name="recordarme">
+          <label for="recordar" class="labelrecordarme">Recordarme</label>
+        </div>
+        <div class="botonsubmit">
+          <input type="submit" value="Iniciar Sesión">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
