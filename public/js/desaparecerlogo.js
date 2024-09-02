@@ -2,8 +2,8 @@ window.addEventListener('scroll', function () {
     const header = document.getElementById('logo-header');
     const scrollY = window.scrollY;
 
-    const startFade = 700;
-    const endFade = 776;
+    const startFade = 600;
+    const endFade = 676;
     const maxScroll = endFade - startFade;
 
     if (scrollY >= startFade) {

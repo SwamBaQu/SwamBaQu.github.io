@@ -3,6 +3,8 @@ const texto = document.querySelectorAll('.texto')
 const punto = document.querySelectorAll('.punto')
 const BtnAnt = document.getElementById('botonanterior')
 const BtnSig = document.getElementById('botonsiguiente')
+const BtnAntMob = document.getElementById('mobilebotonanterior')
+const BtnSigMob = document.getElementById('mobilebotonsiguiente')
 
 let currentSlide = 0;
 
@@ -10,8 +12,8 @@ let enCooldown = false;
 const cooldownTime = 200;
 
 const intervalo = 11000;
-let intervalotimer = intervalo; // Valor inicial del intervalo
-let intervalID; // Variable para almacenar el ID del intervalo
+let intervalotimer = intervalo; 
+let intervalID; 
 
 function startInterval() {
     intervalID = setInterval(function () {
@@ -22,9 +24,9 @@ function startInterval() {
 startInterval();
 
 function updateInterval(newInterval) {
-    clearInterval(intervalID); // Limpia el intervalo actual
-    intervalotimer = newInterval; // Actualiza el valor del intervalo
-    startInterval(); // Inicia un nuevo intervalo con el nuevo valor
+    clearInterval(intervalID);
+    intervalotimer = newInterval;
+    startInterval();
 }
 
 function hideslider() {
@@ -83,6 +85,9 @@ function startCooldown() {
 
 BtnSig.addEventListener('click', nextSlider)
 BtnAnt.addEventListener('click', prevSlider)
+
+BtnSigMob.addEventListener('click', nextSlider)
+BtnAntMob.addEventListener('click', prevSlider)
 
 punto.forEach((item, index) => {
     item.addEventListener('click', () => puntoSlider(index));

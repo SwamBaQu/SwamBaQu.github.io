@@ -6,19 +6,28 @@ const handleHover = (event) => {
 
     if (target.closest('.menuvertical')) return;
 
-    const aElement = target.closest('li').querySelector('a');
-    const itemRect = aElement.getBoundingClientRect();
-    const menuRect = aElement.closest('.menuhorizontal').getBoundingClientRect();
-    seleccion.style.width = `${itemRect.width}px`;
-    seleccion.style.left = `${itemRect.left - menuRect.left}px`;
+    const aElement = target.closest('li').querySelectorAll('a');
+    let itemRect, menuRect;
+
+    aElement.forEach(a => {
+        if (a.contains(target)) {
+            itemRect = a.getBoundingClientRect();
+            menuRect = a.closest('.menuhorizontal').getBoundingClientRect();
+        }
+    });
+
+    if (itemRect) {
+        seleccion.style.width = `${itemRect.width}px`;
+        seleccion.style.left = `${itemRect.left - menuRect.left}px`;
+    }
 };
 
 listItems.forEach(item => {
     item.addEventListener('mouseover', handleHover);
-    const link = item.querySelector('a');
-    if (link) {
+    const links = item.querySelectorAll('a');
+    links.forEach(link => {
         link.addEventListener('mouseover', handleHover);
-    }
+    });
 });
 
 document.querySelector('.menuhorizontal').addEventListener('mouseleave', () => {
