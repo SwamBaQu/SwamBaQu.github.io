@@ -1,4 +1,0 @@
-INSERT INTO `evento` (`ID_evento`, `Titulo`, `Hora_fecha`, `Capacidad`, `Ubicacion`, `Descripcion`) VALUES (NULL, 'titulo1', '2024-01-01 12:37:51', '23', 'ubi', 'desc');
-INSERT INTO `evento` (`ID_evento`, `Titulo`, `Hora_fecha`, `Capacidad`, `Ubicacion`, `Descripcion`) VALUES (NULL, 'titulo2', '2024-02-02 12:37:51', '24', 'ubi2', 'desc2');
-INSERT INTO `evento` (`ID_evento`, `Titulo`, `Hora_fecha`, `Capacidad`, `Ubicacion`, `Descripcion`) VALUES (NULL, 'titulo3', '2024-02-02 12:37:51', '25', 'ubi3', 'desc3');
-INSERT INTO `evento` (`ID_evento`, `Titulo`, `Hora_fecha`, `Capacidad`, `Ubicacion`, `Descripcion`) VALUES (NULL, 'titulo4', '2024-02-02 12:37:51', '26', 'ubi4', 'desc4');
