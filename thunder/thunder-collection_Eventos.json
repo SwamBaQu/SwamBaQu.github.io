@@ -1,0 +1,125 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Eventos",
+    "collectionId": "76d76b96-0d68-400c-871c-1afa514acdca",
+    "dateExported": "2024-08-12T16:23:15.712Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d3e4effb-2af2-459d-8958-38006bb315bd",
+            "colId": "76d76b96-0d68-400c-871c-1afa514acdca",
+            "containerId": "",
+            "name": "http://localhost/Proyecto/index.php?r=evento/crear",
+            "url": "http://localhost/Proyecto/index.php?r=evento/crear",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-08-07T15:22:18.099Z",
+            "modified": "2024-08-07T15:22:18.099Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "r",
+                    "value": "evento/crear",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "titulo"
+                    },
+                    {
+                        "name": "hora_fecha",
+                        "value": "2024-09-23 00:14:00"
+                    },
+                    {
+                        "name": "capacidad",
+                        "value": "15"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "descripciomn"
+                    },
+                    {
+                        "name": "ubicacion",
+                        "value": "suarez"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "d5af864b-8754-4e17-862c-60f2b3e6a4e5",
+            "colId": "76d76b96-0d68-400c-871c-1afa514acdca",
+            "containerId": "",
+            "name": "http://localhost/Proyecto/index.php?r=evento/listar Copy",
+            "url": "http://localhost/Proyecto/index.php?r=evento/crear",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-07T15:28:01.253Z",
+            "modified": "2024-08-07T15:28:01.253Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "r",
+                    "value": "evento/crear",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "titulo"
+                    },
+                    {
+                        "name": "hora_fecha",
+                        "value": "2024-09-23 00:14:00"
+                    },
+                    {
+                        "name": "capacidad",
+                        "value": "15"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "descripciomn"
+                    },
+                    {
+                        "name": "ubicacion",
+                        "value": "suarez"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "6bdb393f-7fe1-4077-9ab0-34b781ac8a1f",
+            "colId": "76d76b96-0d68-400c-871c-1afa514acdca",
+            "containerId": "",
+            "name": "http://localhost/Proyecto/index.php?r=evento/editar",
+            "url": "http://localhost/Proyecto/index.php?r=evento/editar&id=12",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-08-12T16:23:07.057Z",
+            "modified": "2024-08-12T16:23:07.057Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "r",
+                    "value": "evento/editar",
+                    "isPath": false
+                },
+                {
+                    "name": "id",
+                    "value": "12",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "gF-lEcroNhn1bfQNb6AU9TsUYK6sQvD56nLt91noYc1eJ9E7RmGyiQOl4H6jC0-LVZNJsE0ifKsFuHjpzp12qQ"
+}
