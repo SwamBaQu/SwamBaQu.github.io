@@ -6,10 +6,12 @@ namespace Empresa\App\Controllers;
 
 use Empresa\App\Core\Controller;
 
-class IndexController extends Controller
+
+class AdminController extends Controller
 {
-    public function index()
+    public function panelAdmin()
     {
-        $this->render('index/index');
+        $this->render('index/indexadmin');
+
     }
 }

@@ -1,7 +1,5 @@
 <?php
 
-require_once 'config.php';  // Incluir configuración de la base de datos
-
 declare(strict_types=1);
 
 namespace Empresa\App\Core;
@@ -9,9 +7,10 @@ namespace Empresa\App\Core;
 use PDO;
 use PDOException;
 
+
 class Conexion
 {
-    Private static $instancia = null;
+    private static $instancia = null;
     // Método estático para obtener la conexión PDO
     public static function getPDOConnection(): PDO
     {
@@ -22,7 +21,6 @@ class Conexion
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             PDO::ATTR_EMULATE_PREPARES   => false,
         ];
-
 
         try {
             self::$instancia = new PDO($dsn, DB_USER, DB_PASSWORD, $options);

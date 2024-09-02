@@ -1,6 +1,6 @@
 <header>
     <div class="logoheader">
-        <a href="<?= URL_BASE ?>home"> <img src="img/logos/DOPAv2darkU.png" alt="Dopa" class="logo">
+        <a href="<?= URL_BASE ?>home"> <img src="<?= URL_BASE_PATH ?>=img/logos/DOPAv2darkU.png" alt="Dopa" class="logo">
         </a>
     </div>
     <div class="contenedorbarranav">

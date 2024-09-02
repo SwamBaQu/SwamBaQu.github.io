@@ -19,7 +19,7 @@ class Sucursal
         public ?int $id = null,
     ) {
     }
-    // Método para insertar un nuevo auto en la base de datos
+    // Método para insertar una nueva sucursal en la base de datos
 
     public static function listar(): array
     {
@@ -35,7 +35,7 @@ class Sucursal
             );
             return $sucursales;
         } catch (PDOException $e) {
-            error_log("Error al obtener autos: " . $e->getMessage());
+            error_log("Error al obtener sucursal: " . $e->getMessage());
             return [];
         }
     }
